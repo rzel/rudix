@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<pkg-contents spec="1.12">
+  <f n="tokyocabinet-install" o="ruda" g="staff" p="16877" pt="/Users/ruda/Downloads/rudix.hg/Ports/tokyocabinet/tokyocabinet-install" m="false" t="file">
+    <f n="usr" o="root" g="wheel" p="16877">
+      <f n="local" o="root" g="wheel" p="16877">
+        <f n="bin" o="root" g="wheel" p="16877">
+          <f n="tcamgr" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcamttest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcatest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcbmgr" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcbmttest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcbtest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcfmgr" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcfmttest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcftest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tchmgr" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tchmttest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tchtest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tctmgr" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tctmttest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcttest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcucodec" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcumttest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="tcutest" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+        </f>
+        <f n="include" o="root" g="wheel" p="16893">
+          <f n="tcadb.h" o="root" g="wheel" p="33204">
+            <mod>mode</mod>
+          </f>
+          <f n="tcbdb.h" o="root" g="wheel" p="33204">
+            <mod>mode</mod>
+          </f>
+          <f n="tcfdb.h" o="root" g="wheel" p="33204">
+            <mod>mode</mod>
+          </f>
+          <f n="tchdb.h" o="root" g="wheel" p="33204">
+            <mod>mode</mod>
+          </f>
+          <f n="tctdb.h" o="root" g="wheel" p="33204">
+            <mod>mode</mod>
+          </f>
+          <f n="tcutil.h" o="root" g="wheel" p="33204">
+            <mod>mode</mod>
+          </f>
+        </f>
+        <f n="lib" o="root" g="wheel" p="16893">
+          <f n="libtokyocabinet.9.9.0.dylib" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+          <f n="libtokyocabinet.9.dylib" o="root" g="wheel" p="41469">
+            <mod>mode</mod>
+          </f>
+          <f n="libtokyocabinet.a" o="root" g="wheel" p="33204">
+            <mod>mode</mod>
+          </f>
+          <f n="libtokyocabinet.dylib" o="root" g="wheel" p="41469">
+            <mod>mode</mod>
+          </f>
+          <f n="pkgconfig" o="root" g="wheel" p="16893">
+            <f n="tokyocabinet.pc" o="root" g="wheel" p="33204">
+              <mod>mode</mod>
+            </f>
+          </f>
+        </f>
+        <f n="libexec" o="root" g="wheel" p="16893">
+          <f n="tcawmgr.cgi" o="root" g="wheel" p="33277">
+            <mod>mode</mod>
+          </f>
+        </f>
+        <f n="share" o="root" g="wheel" p="16893">
+          <f n="doc" o="root" g="wheel" p="16893">
+            <f n="tokyocabinet" o="root" g="wheel" p="16893">
+              <f n="COPYING" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="README" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <mod>mode</mod>
+            </f>
+          </f>
+          <f n="man" o="root" g="wheel" p="16893">
+            <f n="man1" o="root" g="wheel" p="16893">
+              <f n="tcamgr.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcamttest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcatest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcbmgr.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcbmttest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcbtest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcfmgr.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcfmttest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcftest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tchmgr.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tchmttest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tchtest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tctmgr.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tctmttest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcttest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcucodec.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcumttest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcutest.1" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+            </f>
+            <f n="man3" o="root" g="wheel" p="16893">
+              <f n="tcadb.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcbdb.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcfdb.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tchdb.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tclist.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcmap.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcmdb.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcmpool.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tctdb.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tctree.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcutil.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tcxstr.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tokyocabinet.3" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+            </f>
+          </f>
+          <f n="tokyocabinet" o="root" g="wheel" p="16893">
+            <f n="ChangeLog" o="root" g="wheel" p="33204">
+              <mod>mode</mod>
+            </f>
+            <f n="COPYING" o="root" g="wheel" p="33204">
+              <mod>mode</mod>
+            </f>
+            <f n="doc" o="root" g="wheel" p="16893">
+              <f n="benchmark.pdf" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="common.css" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="icon16.png" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="index.html" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="index.ja.html" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="logo-ja.png" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="logo.png" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="spex-en.html" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="spex-ja.html" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tokyoproducts.pdf" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <f n="tokyoproducts.ppt" o="root" g="wheel" p="33204">
+                <mod>mode</mod>
+              </f>
+              <mod>mode</mod>
+            </f>
+            <f n="tokyocabinet.idl" o="root" g="wheel" p="33204">
+              <mod>mode</mod>
+            </f>
+            <mod>mode</mod>
+          </f>
+        </f>
+      </f>
+    </f>
+  </f>
+</pkg-contents>

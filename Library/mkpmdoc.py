@@ -12,7 +12,7 @@ Index = '''<?xml version="1.0"?>
   <properties>
     <title>{title}</title>
     <organization>{vendor}</organization>
-    <userSees ui="easy"/>
+    <userSees ui="both"/>
     <min-target os="3"/>
     <domain anywhere="true"/>
   </properties>
@@ -35,6 +35,7 @@ Index = '''<?xml version="1.0"?>
   <flags/>
   <item type="file">01{name}.xml</item>
   <mod>properties.title</mod>
+  <mod>properties.customizeOption</mod>
   <mod>description</mod>
 </pkmkdoc>
 '''

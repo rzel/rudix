@@ -1,0 +1,28 @@
+include ../../Library/Config.mk
+include ../../Library/Rudix.mk
+include ../../Library/GNUFormula.mk
+
+Site=		http://apr.apache.org/
+License=	Apache License
+Description=	Apache Portable Runtime library
+Title=		APR
+Name=		apr
+Version=	1.4.2
+Revision=	1
+URL=		http://www.apache.org/dist/apr
+Source=		$(Name)-$(Version).tar.bz2
+
+ReadMeFile=	$(BuildDir)/README
+LicenseFile=	$(BuildDir)/LICENSE
+
+#ifdef STATIC_ONLY
+#CONFIG_OPTS=	--enable-static --disable-shared
+#endif
+
+GnuConfigureExtra += --with-installbuilddir=/usr/local/share/apr-1/build-1
+GnuConfigureExtra += --enable-threads
+
+define install_post_hook
+install -m 644 $(BuildDir)/docs/* $(InstallDir)/$(DocDir)/$(Name)
+rm $(InstallDir)$(LibDir)/apr.exp
+endef

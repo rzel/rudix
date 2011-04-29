@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<pkmkdoc spec="1.12">
+  <properties>
+    <title>Artistic Style</title>
+    <organization>org.rudix.pkg</organization>
+    <userSees ui="easy"/>
+    <min-target os="3"/>
+    <domain anywhere="true"/>
+  </properties>
+  <distribution>
+    <versions min-spec="1.000000"/>
+    <scripts/>
+  </distribution>
+  <description>Indenter and formatter of C/C++/Java source files
+</description>
+  <contents>
+    <choice title="astyle-install" id="choice0" starts_selected="true" starts_enabled="true" starts_hidden="false">
+      <pkgref id="org.rudix.pkg.astyle"/>
+    </choice>
+  </contents>
+  <resources bg-scale="none" bg-align="topleft">
+    <locale lang="en">
+      <resource relative="true" mod="true" type="license">astyle-2.01/doc/license.html</resource>
+      <resource relative="true" mod="true" type="readme">astyle-2.01/doc/index.html</resource>
+    </locale>
+  </resources>
+  <flags/>
+  <item type="file">01astyle.xml</item>
+  <mod>properties.title</mod>
+  <mod>description</mod>
+</pkmkdoc>

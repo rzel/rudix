@@ -1,0 +1,18 @@
+--- Makefile~	2009-10-10 22:42:04.000000000 -0300
++++ Makefile	2009-10-28 20:57:47.000000000 -0200
+@@ -1413,7 +1413,6 @@
+ 
+ $(BUILT_INS): git$X
+ 	$(QUIET_BUILT_IN)$(RM) $@ && \
+-	ln git$X $@ 2>/dev/null || \
+ 	ln -s git$X $@ 2>/dev/null || \
+ 	cp git$X $@
+ 
+@@ -1744,7 +1743,6 @@
+ 		cp "$$bindir/git$X" "$$execdir/git$X"; } ; } && \
+ 	{ for p in $(BUILT_INS); do \
+ 		$(RM) "$$execdir/$$p" && \
+-		ln "$$execdir/git$X" "$$execdir/$$p" 2>/dev/null || \
+ 		ln -s "git$X" "$$execdir/$$p" 2>/dev/null || \
+ 		cp "$$execdir/git$X" "$$execdir/$$p" || exit; \
+ 	  done; } && \

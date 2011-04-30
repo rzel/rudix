@@ -1,0 +1,18 @@
+syntax: glob
+.DS_Store
+retrieve
+prep
+build
+install
+pmdoc
+test
+pkg
+*~
+*.pkg
+*-install
+*-build
+*.tar.gz
+*.tar.bz2
+*.zip
+*.orig
+config.cache

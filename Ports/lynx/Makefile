@@ -1,0 +1,40 @@
+BuildRequires += /usr/local/lib/libintl.la
+
+include ../../Library/Config.mk
+include ../../Library/Rudix.mk
+include ../../Library/GNUFormula.mk
+
+Description=	Lynx is a text browser for the World Wide Web
+Site=		http://lynx.isc.org/
+License=	GPL
+Title=		Lynx
+Name=		lynx
+Version=	2.8.7
+Revision=	2
+URL=		http://lynx.isc.org/release/
+Source=		$(Name)$(Version).tar.bz2
+
+ReadMeFile=	$(SourceDir)/README
+LicenseFile=	$(SourceDir)/COPYING
+
+UncompressedName = lynx2-8-7
+
+ifeq ($(RUDIX_BUILD_WITH_STATIC_LIB),yes)
+LdFlags += /usr/local/lib/libintl.a -liconv -framework CoreFoundation
+define prep_post_hook
+#perl -p -i -e s/'intl '//g $(SourceDir)/configure
+endef
+endif
+
+GnuConfigureExtra += --enable-ipv6
+GnuConfigureExtra += --with-ssl
+
+define install_post_hook
+mv $(InstallDir)$(Prefix)/etc/lynx.cfg $(InstallDir)$(Prefix)/etc/lynx.cfg.default
+mv $(InstallDir)$(Prefix)/etc/lynx.lss $(InstallDir)$(Prefix)/etc/lynx.lss.default
+install -m 644 $(SourceDir)/{CHANGES,COPYHEADER*,PROBLEMS} $(InstallDir)/$(DocDir)/$(Name)
+endef
+
+define test_inner_hook
+$(call test_universal)
+endef

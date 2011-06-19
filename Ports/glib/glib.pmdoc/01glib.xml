@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<pkgref spec="1.12" uuid="8FC333E6-8604-4F2D-AD99-22C660E4A5EC">
+  <config>
+    <identifier>org.rudix.pkg.glib</identifier>
+    <version>2.27.93</version>
+    <description/>
+    <post-install type="none"/>
+    <requireAuthorization/>
+    <installFrom relative="true" mod="true">glib-install</installFrom>
+    <installTo>/</installTo>
+    <flags>
+      <followSymbolicLinks/>
+    </flags>
+    <packageStore type="internal"/>
+    <mod>installTo</mod>
+    <mod>installFrom.path</mod>
+    <mod>identifier</mod>
+    <mod>parent</mod>
+    <mod>version</mod>
+  </config>
+  <contents>
+    <file-list>01glib-contents.xml</file-list>
+    <filter>/CVS$</filter>
+    <filter>/\.svn$</filter>
+    <filter>/\.cvsignore$</filter>
+    <filter>/\.cvspass$</filter>
+    <filter>/\.DS_Store$</filter>
+  </contents>
+</pkgref>

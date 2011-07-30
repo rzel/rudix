@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<pkgref spec="1.12" uuid="1033F8B2-4ADF-4251-B24B-DD0B7ED9FF64">
+  <config>
+    <identifier>org.rudix.pkg.tornado</identifier>
+    <version>1.1</version>
+    <description/>
+    <post-install type="none"/>
+    <requireAuthorization/>
+    <installFrom relative="true" mod="true">tornado-install</installFrom>
+    <installTo>/</installTo>
+    <flags>
+      <followSymbolicLinks/>
+    </flags>
+    <packageStore type="internal"/>
+    <mod>installTo</mod>
+    <mod>installFrom.path</mod>
+    <mod>identifier</mod>
+    <mod>parent</mod>
+    <mod>version</mod>
+  </config>
+  <contents>
+    <file-list>01tornado-contents.xml</file-list>
+    <filter>/CVS$</filter>
+    <filter>/\.svn$</filter>
+    <filter>/\.cvsignore$</filter>
+    <filter>/\.cvspass$</filter>
+    <filter>/\.DS_Store$</filter>
+  </contents>
+</pkgref>

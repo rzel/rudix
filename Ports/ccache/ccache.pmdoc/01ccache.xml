@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<pkgref spec="1.12" uuid="49984AB5-BBDE-11E0-96A2-D49A200B3D20">
+  <config>
+    <identifier>org.rudix.pkg.ccache</identifier>
+    <version>3.1.5-0</version>
+    <description/>
+    <post-install type="none"/>
+    <requireAuthorization/>
+    <installFrom relative="true" mod="true">ccache-install</installFrom>
+    <installTo>/</installTo>
+    <flags>
+      <followSymbolicLinks/>
+    </flags>
+    <packageStore type="internal"/>
+    <mod>installTo</mod>
+    <mod>installFrom.path</mod>
+    <mod>identifier</mod>
+    <mod>parent</mod>
+    <mod>version</mod>
+  </config>
+  <contents>
+    <file-list>01ccache-contents.xml</file-list>
+    
+    <filter>/CVS$</filter>
+    <filter>/\.svn$</filter>
+    <filter>/\.cvsignore$</filter>
+    <filter>/\.cvspass$</filter>
+    <filter>/\.DS_Store$</filter>
+  </contents>
+</pkgref>

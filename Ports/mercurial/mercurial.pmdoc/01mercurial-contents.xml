@@ -1559,10 +1559,8 @@
     </f>
     <f n="usr" o="root" g="wheel" p="16877">
       <f n="local" o="root" g="wheel" p="16877">
-        <f n="bin" o="root" g="wheel" p="16877">
-          <f n="hg" o="root" g="wheel" p="33277">
-            <mod>mode</mod>
-          </f>
+        <f n="bin" o="root" g="wheel" p="16893">
+          <f n="hg" o="root" g="wheel" p="33277"/>
         </f>
         <f n="share" o="root" g="wheel" p="16893">
           <f n="doc" o="root" g="wheel" p="16893">

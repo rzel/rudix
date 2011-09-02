@@ -2,7 +2,7 @@
 # Copyright (c) 2011 Ruda Moura
 # Authors: Ruda Moura, Leonardo Santagada
 
-BuildSystem = 20110827
+BuildSystem = 20110901
 
 Vendor = org.rudix
 UncompressedName = $(Name)-$(Version)
@@ -128,29 +128,20 @@ sanitizepmdoc:
 
 sanitize:
 	@$(call info_color,Sanitizing pmdoc)
+	for x in $(Name).pmdoc/*-contents.xml ; do \
+		perl -p -i -e 's/o="$(USER)"/o="root"/ ; s/pt="[^"]*"/pt="$(InstallDir)"/' $$x ; done
 	for x in $(Name).pmdoc/*.xml ; do \
 		xmllint --format --output $$x $$x ; done
-	@$(call info_color,Finished) 
+	@$(call info_color,Finished)
 
 upload: pkg
 	@$(call info_color,Sending $(PkgFile))
 	hg tag -f $(Name)-$(Version)-$(Revision)
-	../../Library/googlecode_upload.py -p rudix -s "$(Title)" -d "$(Description)" -l 'Rudix-2011,OSX-Lion' $(PkgFile)
-ifdef TWEET
-	twitter -erudix4mac set $(Title) $(Version) $(TWEET) http://rudix.googlecode.com/files/$(PkgFile)
-else
-	twitter -erudix4mac set $(Title) $(Version) http://rudix.googlecode.com/files/$(PkgFile)
-endif
+	../../Library/googlecode_upload.py -p rudix -s "$(Title)" -d Description -l $(RUDIX_LABELS) $(PkgFile)
+	twitter -erudix4mac set $(Title) $(Version)-$(Revision) http://code.google.com/p/rudix/downloads/detail?name=$(PkgFile)
 	@$(call info_color,Finished)
 
-wiki:
-	@$(call info_color,Generating Wiki page)
-	env Name="$(Name)" Title="$(Title)" Description="$(Description)" \
-		Site="$(Site)" License="$(License)" PkgFile="$(PkgFile)" \
-		../../Library/mkwikipage.py
-	@$(call info_color,Finished)
-
-.PHONY: buildclean installclean pkgclean clean distclean realdistclean sanitizepmdoc sanitize upload wiki
+.PHONY: buildclean installclean pkgclean clean distclean realdistclean sanitizepmdoc sanitize upload
 
 #
 # Functions
@@ -189,7 +180,7 @@ define create_pmdoc
 	--name $(Name) \
 	--version $(Version)-$(Revision) \
 	--title "$(Title)" \
-	--description "$(Description)" \
+	--description Description \
 	--readme $(ReadMeFile) \
 	--license $(LicenseFile) \
 	--components '$(Components)' \

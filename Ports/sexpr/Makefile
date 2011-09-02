@@ -1,0 +1,28 @@
+include ../../Library/Config.mk
+include ../../Library/Rudix.mk
+include ../../Library/GNUFormula.mk
+
+Description=	The small, fast s-expression library
+Site=		http://sexpr.sourceforge.net/
+License=	BSD
+Title=		sfsexp
+Name=		sexpr
+Version=	1.2.1
+Revision=	0
+URL=		http://downloads.sourceforge.net/$(Name)
+Source=		$(Name)_$(Version).tar.gz
+
+ReadMeFile=	$(SourceDir)/README.txt
+LicenseFile=	$(SourceDir)/LICENSE
+
+UncompressedName=$(Name)_$(Version)
+
+GnuMakeExtra += CFLAGS="$(CFlags)" LDFLAGS="$(LdFlags)"
+
+define install_post_hook
+install -d $(InstallDir)$(Prefix)/include/sexpr
+install -m 644 $(SourceDir)/src/*.h $(InstallDir)$(Prefix)/include/sexpr
+install -d $(InstallDir)$(LibDir)
+install -m 644 $(SourceDir)/src/libsexp.a $(InstallDir)$(LibDir)
+install -m 644 $(SourceDir)/*.txt $(InstallDir)/$(DocDir)/$(Name)
+endef

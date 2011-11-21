@@ -3,7 +3,7 @@
   <f n="xz-install" o="root" g="staff" p="16877" pt="xz-install" m="false" t="file">
     <f n="usr" o="root" g="wheel" p="16877">
       <f n="local" o="root" g="wheel" p="16877">
-        <f n="bin" o="root" g="wheel" p="16877">
+        <f n="bin" o="root" g="wheel" p="16893">
           <f n="lzcat" o="root" g="wheel" p="41469">
             <mod>mode</mod>
           </f>

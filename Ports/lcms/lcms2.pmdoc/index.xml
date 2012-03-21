@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <pkmkdoc spec="1.12">
   <properties>
-    <title>LAME</title>
+    <title>Little CMS</title>
     <organization>org.rudix</organization>
     <userSees ui="easy"/>
     <min-target os="3"/>
@@ -11,29 +11,29 @@
     <versions min-spec="1.000000"/>
     <scripts/>
   </distribution>
-  <description>LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL.
+  <description>Little CMS intends to be a small-footprint color management engine.
 
-  * http://lame.sourceforge.net/
-  * LGPL
+  * Site: http://www.littlecms.com/
+  * License: MIT
 
 Release Notes:
-  * Upgraded to version 3.99.5
+  * Upgraded to version 2.3
 </description>
   <contents>
-    <choice title="lame-install" id="choice0" starts_selected="true" starts_enabled="true" starts_hidden="false">
-      <pkgref id="org.rudix.pkg.lame"/>
+    <choice title="lcms2-install" id="choice0" starts_selected="true" starts_enabled="true" starts_hidden="false">
+      <pkgref id="org.rudix.pkg.lcms2"/>
     </choice>
   </contents>
   <resources bg-scale="none" bg-align="bottomleft">
     <locale lang="en">
       <resource relative="true" mod="true" type="background">../../Library/rudix.png</resource>
-      <resource relative="true" mod="true" type="license">lame-build/COPYING</resource>
-      <resource relative="true" mod="true" type="readme">lame-build/README</resource>
+      <resource relative="true" mod="true" type="license">lcms2-build/COPYING</resource>
+      <resource relative="true" mod="true" type="readme">README</resource>
       <resource relative="true" mod="true" type="welcome">../../Library/Introduction</resource>
     </locale>
   </resources>
   <flags/>
-  <item type="file">01lame.xml</item>
+  <item type="file">01lcms.xml</item>
   <mod>properties.title</mod>
   <mod>description</mod>
 </pkmkdoc>

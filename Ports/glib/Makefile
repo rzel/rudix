@@ -1,8 +1,6 @@
 BuildRequires += $(LibDir)/libintl.la
 
-include ../../Library/Config.mk
-include ../../Library/Rudix.mk
-include ../../Library/GNUFormula.mk
+include ../../Library/GNU.mk
 
 ifdef WITH_STATIC_LIBS
 LdFlags += -framework CoreFoundation -liconv

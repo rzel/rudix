@@ -10,3 +10,5 @@ RUDIX_BUILD_ONLY_STATIC_LIB=no
 RUDIX_PARALLEL_EXECUTION=yes
 RUDIX_APPLY_RECOMMENDATIONS=yes
 RUDIX_LABELS=Rudix-2012,OSX-SnowLeopard,XCode-4.2
+#RUDIX_PACKAGEMAKER=/Applications/Utilities/PackageMaker.app/Contents/MacOS/packagemaker
+RUDIX_PACKAGEMAKER=/Developer/usr/bin/packagemaker

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<pkgref spec="1.12" uuid="BABDF714-801D-11E1-A0A8-D49A200B3D20">
+<pkgref spec="1.12" uuid="268D90C7-801C-11E1-BE8C-D49A200B3D20">
   <config>
-    <identifier>org.rudix.pkg.fabric</identifier>
-    <version>1.4.1-0</version>
+    <identifier>org.rudix.pkg.ssh</identifier>
+    <version>1.7.13-0</version>
     <description/>
     <post-install type="none"/>
     <requireAuthorization/>
-    <installFrom relative="true" mod="true">fabric-install</installFrom>
+    <installFrom relative="true" mod="true">ssh-install</installFrom>
     <installTo>/</installTo>
     <flags>
       <followSymbolicLinks/>
@@ -19,7 +19,7 @@
     <mod>parent</mod>
   </config>
   <contents>
-    <file-list>01fabric-contents.xml</file-list>
+    <file-list>01ssh-contents.xml</file-list>
     <filter>/CVS$</filter>
     <filter>/\.svn$</filter>
     <filter>/\.cvsignore$</filter>

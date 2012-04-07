@@ -9,3 +9,8 @@ Source=		$(Name)-$(Version).tar.gz
 
 ReadMeFile=	$(SourceDir)/README.rst
 LicenseFile=	$(SourceDir)/LICENSES.txt
+
+define final_inner_hook
+$(BinDir)/supervisorctl -h
+$(BinDir)/supervisord -h
+endef

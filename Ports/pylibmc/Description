@@ -1,0 +1,7 @@
+Quick and small memcached client for Python.
+
+Site: http://pypi.python.org/pypi/pylibmc
+License: Python License
+
+Release Notes:
+* Rebuild on Xcode 4.3

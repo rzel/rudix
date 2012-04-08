@@ -1,0 +1,26 @@
+BuildRequires += $(LibDir)/libintl.la
+
+include ../../Library/Config.mk
+include ../../Library/Rudix.mk
+include ../../Library/GNUFormula.mk
+
+ifeq ($(RUDIX_BUILD_WITH_STATIC_LIB),yes)
+LdFlags += -framework CoreFoundation -liconv
+endif
+
+Title=		GNU Wget
+Name=		wget
+Version=	1.13.4
+Revision=	2
+URL=		http://ftp.gnu.org/gnu/wget/
+Source=		$(Name)-$(Version).tar.gz
+
+ReadMeFile=	$(SourceDir)/README
+LicenseFile=	$(SourceDir)/COPYING
+
+GnuConfigureExtra += --with-ssl=openssl
+
+define install_post_hook
+mv $(InstallDir)/$(Prefix)/etc/wgetrc $(InstallDir)/$(Prefix)/etc/wgetrc.default
+endef
+

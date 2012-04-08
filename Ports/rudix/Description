@@ -1,0 +1,7 @@
+Rudix Package Manager - RPM ;)
+
+  * Site: http://rudix.org/
+  * License: BSD
+
+Release Notes:
+  * Aliases for package names (example: hg for mercurial)

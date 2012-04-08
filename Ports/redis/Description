@@ -1,0 +1,7 @@
+Redis is an open source, advanced key-value store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets and sorted sets.
+
+  * Site: http://redis.io/
+  * License: BSD
+
+Release Notes
+  * Upgraded to version 2.4.7

@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
-<pkgref spec="1.12" uuid="742AEC6E-8447-11E1-A6EB-D49A200B3D20">
+<pkgref spec="1.12" uuid="AD55671C-84B2-11E1-AA75-D49A200B3D20">
   <config>
-    <identifier>org.rudix.pkg.gmp4-runtime</identifier>
-    <version>4.3.2-2</version>
+    <identifier>org.rudix.pkg.serf</identifier>
+    <version>1.0.3-0</version>
     <description/>
     <post-install type="none"/>
     <requireAuthorization/>
-    <installFrom relative="true" mod="true">../gmp4-runtime/gmp4-runtime-install</installFrom>
+    <installFrom relative="true" mod="true">serf-install</installFrom>
     <installTo>/</installTo>
     <flags>
       <followSymbolicLinks/>
     </flags>
     <packageStore type="internal"/>
-    <mod>version</mod>
+    <mod>installTo</mod>
     <mod>installFrom.path</mod>
     <mod>identifier</mod>
-    <mod>installTo</mod>
     <mod>parent</mod>
+    <mod>version</mod>
   </config>
   <contents>
-    <file-list>../gmp4-runtime/gmp4-runtime.pmdoc/01gmp-contents.xml</file-list>
+    <file-list>01serf-contents.xml</file-list>
     <filter>/CVS$</filter>
     <filter>/\.svn$</filter>
     <filter>/\.cvsignore$</filter>

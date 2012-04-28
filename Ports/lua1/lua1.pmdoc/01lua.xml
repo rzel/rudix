@@ -1,29 +1,25 @@
 <?xml version="1.0"?>
-<<<<<<< local
-<pkgref spec="1.12" uuid="1EE31048-75DE-11E1-9923-0017F22C0C04">
-=======
-<pkgref spec="1.12" uuid="1D486438-8CB9-11E1-AB6C-D49A200B3D20">
->>>>>>> other
+<pkgref spec="1.12" uuid="93F84AC2-90A7-11E1-BAC4-D49A200B3D20">
   <config>
-    <identifier>org.rudix.pkg.libsigcpp</identifier>
-    <version>2.2.10-0</version>
+    <identifier>org.rudix.pkg.lua1</identifier>
+    <version>5.1.5-0</version>
     <description/>
     <post-install type="none"/>
     <requireAuthorization/>
-    <installFrom relative="true" mod="true">libsigcpp-install</installFrom>
+    <installFrom relative="true" mod="true">lua1-install</installFrom>
     <installTo>/</installTo>
     <flags>
       <followSymbolicLinks/>
     </flags>
     <packageStore type="internal"/>
-    <mod>installTo</mod>
+    <mod>version</mod>
     <mod>installFrom.path</mod>
     <mod>identifier</mod>
+    <mod>installTo</mod>
     <mod>parent</mod>
-    <mod>version</mod>
   </config>
   <contents>
-    <file-list>01libsigcpp-contents.xml</file-list>
+    <file-list>01lua-contents.xml</file-list>
     <filter>/CVS$</filter>
     <filter>/\.svn$</filter>
     <filter>/\.cvsignore$</filter>

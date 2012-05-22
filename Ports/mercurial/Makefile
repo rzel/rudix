@@ -1,8 +1,6 @@
-BuildRequires += /usr/local/bin/msgfmt
+#BuildRequires += /usr/local/bin/msgfmt
 
-include ../../Library/Config.mk
-include ../../Library/Rudix.mk
-include ../../Library/PythonFormula.mk
+include ../../Library/Python.mk
 
 Title=		Mercurial
 Name=		mercurial

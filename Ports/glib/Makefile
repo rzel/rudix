@@ -1,21 +1,15 @@
-BuildRequires += $(LibDir)/libintl.la
+# Requires xz to extract source
 
 include ../../Library/GNU.mk
 
-ifdef WITH_STATIC_LIBS
-LdFlags += -framework CoreFoundation -liconv
-endif
-
-ifdef ONLY_STATIC_LIBS
-GnuConfigureExtra += --enable-static --disable-shared
-endif
+BuildRequires += $(LibDir)/libintl.la
 
 Title=		GLib
 Name=		glib
-Version=	2.28.8
-Revision=	1
-URL=		http://ftp.gnome.org/pub/GNOME/sources/glib/2.28/
-Source=		$(Name)-$(Version).tar.bz2
+Version=	2.33.2
+Revision=	0
+URL=		http://ftp.gnome.org/pub/GNOME/sources/glib/2.33
+Source=		$(Name)-$(Version).tar.xz
 
 ReadMeFile=	$(SourceDir)/README
 LicenseFile=	$(SourceDir)/COPYING
@@ -23,3 +17,6 @@ LicenseFile=	$(SourceDir)/COPYING
 ifdef ONLY_STATIC_LIBS
 GnuConfigureExtra += --enable-static --disable-shared
 endif
+
+EnvExtra += LIBFFI_CFLAGS="-I/usr/include/ffi"
+EnvExtra += LIBFFI_LIBS="-L/usr/local/lib -lffi"

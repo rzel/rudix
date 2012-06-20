@@ -1,3 +1,5 @@
+BuildRequires += $(LibDir)/libintl.la # static-gettext
+
 include ../../Library/GNU.mk
 
 Title=		Git
@@ -39,6 +41,8 @@ rm -rf $(InstallDir)$(LibDir)
 install -d $(InstallDir)$(Prefix)/share/man
 tar jxf $(PortDir)/git-manpages-$(Version).tar.gz \
 	-C $(InstallDir)$(Prefix)/share/man
+# App
+rm -rf $(InstallDir)/Applications/
 endef
 
 define final_inner_hook
